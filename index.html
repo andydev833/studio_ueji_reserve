@@ -13,6 +13,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
   <title>スタジオうえじ 七五三撮影予約</title>
+  <script>
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    sessionStorage.removeItem('redirectPath');
+
+    if (redirectPath && redirectPath !== '/') {
+      history.replaceState(null, '', '/studio_ueji_reserve' + redirectPath);
+    }
+  </script>
 </head>
 
 <body>
