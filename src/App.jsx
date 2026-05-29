@@ -51,7 +51,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/studio_ueji_reserve">
       <AuthProvider>
         <EventLogProvider>
           <ReservationProvider>
