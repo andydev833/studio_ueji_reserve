@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/for_studio_ueji/',
+  base: '/studio_ueji_reserve/',
 })
